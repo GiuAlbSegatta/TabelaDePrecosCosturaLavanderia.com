@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Preços-A TODO VAPOR</title>
+    <title>Tabela de Preços - A TODO VAPOR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,8 @@
         }
 
         .container {
-            width: 60%; /* Diminuir a largura para tornar mais compacta */
+            width: 90%; /* Ajusta a largura para ocupar mais espaço em telas pequenas */
+            max-width: 800px; /* Limita a largura em telas grandes */
             margin: 50px auto;
             background-color: white;
             border-radius: 10px;
@@ -61,6 +62,17 @@
             padding: 10px;
             font-size: 1.2em;
             text-align: center;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px; /* Reduzir padding em dispositivos móveis */
+            }
+
+            .section-title {
+                font-size: 1em; /* Ajustar tamanho da fonte */
+            }
         }
     </style>
 </head>
@@ -148,31 +160,4 @@
                 <td>R$ 40,00</td>
             </tr>
             <tr>
-                <td>CORTINAS A PARTIR DE</td>
-                <td>R$ 30,00</td>
-            </tr>
-            <tr>
-                <td>EDREDOM PENA</td>
-                <td>R$ 60,00</td>
-            </tr>
-            <tr>
-                <td>EDREDOM KING</td>
-                <td>R$ 40,00</td>
-            </tr>
-            <tr>
-                <td>EDREDOM QUEEN</td>
-                <td>R$ 40,00</td>
-            </tr>
-            <tr>
-                <td>EDREDOM CASAL</td>
-                <td>R$ 30,00</td>
-            </tr>
-            <tr>
-                <td>EDREDOM SOLTEIRO</td>
-                <td>R$ 25,00</td>
-            </tr>
-        </table>
-    </div>
-
-</body>
-</html>
+                <td>
